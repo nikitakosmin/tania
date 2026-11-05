@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tânia</title>
+<meta name="description" content="Tânia — Office Siren & Neon.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0c0d14">
+<meta property="og:title" content="Tânia">
+<meta property="og:image" content="assets/hero.jpg">
+<link rel="preload" as="image" href="assets/hero.jpg">
+<link rel="preload" as="font" type="font/woff2" href="fonts/orbitron-latin-900-normal.woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ===== top bar ===== -->
+<header class="bar" id="bar">
+  <a class="bar__brand" href="#top">TÂNIA <span>Nº&nbsp;8</span></a>
+  <span class="bar__mid" data-i18n="bar_mid">Porto · 2026</span>
+  <div class="bar__right">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+    <a class="bar__dl" href="download/Tania_60_fotos.zip" download data-i18n-aria="dl_all">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>
+    </a>
+  </div>
+</header>
+
+<main id="top">
+  <!-- ===== hero ===== -->
+  <section class="hero">
+    <div class="hero__img" aria-hidden="true"><img src="assets/hero.jpg" alt="" fetchpriority="high"></div>
+    <div class="hero__lines" aria-hidden="true">
+      <i class="v v1"></i><i class="v v2"></i><i class="h h1"></i><i class="h h2"></i><i class="diag"></i>
+      <span class="mark"><b></b></span>
+      <span class="tick t1">4x</span><span class="tick t2">1x</span><span class="tick t3">1x</span>
+    </div>
+    <div class="hero__content">
+      <p class="hero__kicker mono"><span data-i18n="kicker">Office Siren / Neon</span> <em>—</em> Porto, 2026</p>
+      <h1 class="hero__title" aria-label="Tânia"><span>TÂNIA</span></h1>
+      <p class="hero__lead" data-i18n="lead">Todas tuas.</p>
+      <div class="hero__cta">
+        <a class="btn btn--light" href="#galeria" data-i18n="cta_view">Ver galeria</a>
+        <a class="btn btn--ghost" href="download/Tania_60_fotos.zip" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>
+          <span data-i18n="cta_all">Descarregar tudo</span> <small>46 MB</small>
+        </a>
+      </div>
+    </div>
+    <div class="hero__meta mono">
+      <span>Nº 8</span><span class="scroll" data-i18n="scroll">Desliza</span>
+    </div>
+  </section>
+
+  <!-- ===== film strip ===== -->
+  <section class="strip" aria-label="Film strip">
+    <div class="strip__track" id="strip"></div>
+  </section>
+
+  <!-- ===== intro ===== -->
+  <section class="intro">
+    <p class="intro__label mono">Nº 8 — <span data-i18n="name_label">o nome</span></p>
+    <h2 class="intro__big">
+      <span data-i18n="intro_1">Do grego antigo:</span>
+      <em data-i18n="intro_2">nomear, ordenar, senhora.</em>
+    </h2>
+    <ol class="intro__list">
+      <li><span class="mono">01</span><p data-i18n="t1">Distingue-se por um carácter forte e independente e por qualidades de liderança naturais — «rainha guerreira».</p></li>
+      <li><span class="mono">02</span><p data-i18n="t2">Possui grande emotividade e expressividade.</p></li>
+      <li><span class="mono">03</span><p data-i18n="t3">Na numerologia portuguesa, o número 8 corresponde à praticidade, à ambição e ao desejo de sucesso material.</p></li>
+      <li><span class="mono">04</span><p data-i18n="t4">Propensa ao perfeccionismo e à dominância.</p></li>
+    </ol>
+  </section>
+
+  <!-- ===== gallery ===== -->
+  <section class="gallery" id="galeria">
+    <div class="gallery__head">
+      <h2 class="gallery__title" data-i18n="gallery">Galeria</h2>
+      <div class="filters" role="tablist">
+        <button type="button" class="is-on" data-filter="all" data-i18n="f_all">Todas</button>
+        <button type="button" data-filter="color" data-i18n="f_color">Cor</button>
+        <button type="button" data-filter="bw" data-i18n="f_bw">P&amp;B</button>
+      </div>
+    </div>
+
+    <div class="chapter">
+      <header class="chapter__head">
+        <span class="mono">I</span>
+        <h3>Office Siren</h3>
+        <span class="mono chapter__count" id="count-office"></span>
+      </header>
+      <div class="grid" id="grid-office"></div>
+    </div>
+
+    <div class="chapter">
+      <header class="chapter__head">
+        <span class="mono">II</span>
+        <h3>Neon</h3>
+        <span class="mono chapter__count" id="count-neon"></span>
+      </header>
+      <div class="grid" id="grid-neon"></div>
+    </div>
+  </section>
+
+  <!-- ===== download all ===== -->
+  <section class="dl">
+    <p class="mono dl__label" data-i18n="dl_label">Arquivo completo</p>
+    <h2 class="dl__title" data-i18n="dl_title">Leva tudo contigo.</h2>
+    <p class="dl__text" data-i18n="dl_text">Todas as fotos em alta resolução, num só arquivo ZIP.</p>
+    <a class="btn btn--light btn--big" href="download/Tania_60_fotos.zip" download>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>
+      <span data-i18n="cta_all">Descarregar tudo</span> <small>ZIP · 46 MB</small>
+    </a>
+    <p class="dl__hint mono" data-i18n="dl_hint">No telemóvel: abre uma foto e toca em «Guardar» para a enviar para a galeria.</p>
+  </section>
+</main>
+
+<footer class="foot mono">
+  <span>TÂNIA — Nº 8</span>
+  <span data-i18n="foot">Feito para a Tânia · 2026</span>
+</footer>
+
+<!-- ===== lightbox ===== -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Viewer">
+  <div class="lb__bg"></div>
+  <div class="lb__top">
+    <span class="lb__count mono" id="lb-count">Nº 01</span>
+    <div class="lb__actions">
+      <button type="button" class="lb__btn" id="lb-share" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 15V3m0 0L7 8m5-5l5 5M5 13v6a2 2 0 002 2h10a2 2 0 002-2v-6"/></svg>
+        <span data-i18n="save">Guardar</span>
+      </button>
+      <a class="lb__btn lb__btn--solid" id="lb-dl" href="#" download>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-5-5m5 5l5-5M4 19h16"/></svg>
+        <span data-i18n="download">Descarregar</span>
+      </a>
+      <button type="button" class="lb__btn lb__btn--icon" id="lb-close" data-i18n-aria="close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="lb__stage" id="lb-stage">
+    <div class="lb__slide" id="lb-slide"><img id="lb-img" alt=""></div>
+  </div>
+  <button type="button" class="lb__nav lb__nav--prev" id="lb-prev" data-i18n-aria="prev">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button type="button" class="lb__nav lb__nav--next" id="lb-next" data-i18n-aria="next">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+  <div class="lb__rail" id="lb-rail"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
